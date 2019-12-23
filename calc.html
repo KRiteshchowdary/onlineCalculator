@@ -4,11 +4,11 @@
 
     <head>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- RWB -->
 
-        <link rel="stylesheet" type="text/css" href="css/calc.css" />
+        <link rel="stylesheet" type="text/css" href="css/calc.css" /> <!-- Including CSS file-->
 
-        <script src="JavaScript/calc.js"></script>
+        <script src="JavaScript/calc.js"></script> <!-- Including JavaScript file-->
 
         <title>Calculator-tr</title>
 
@@ -74,6 +74,21 @@
 
             <div class="display" >
 
+                <!--  Text box typing Calculator -->
+
+                <div id="text_input" >
+                    <p>Enter the Expression to be calculated:</p><br>
+
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" size="30" id="input" ><br><br>
+
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button id="input" onclick={formValidate()}> = </button>
+                    
+                    <br>
+                    
+                    <p id ="input_message"> Enter input to get calculated output</p>
+
+                </div>
+
                 <!-- history class is for previous entries -->
 
                 <div class="history" id="history" >
@@ -89,6 +104,7 @@
                     answer
                 
                 </div>
+
 
             </div>
         </div>
