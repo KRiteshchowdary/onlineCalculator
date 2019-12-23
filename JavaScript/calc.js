@@ -92,3 +92,38 @@ function reset(){
     document.getElementById("history").innerHTML = "history";
     console.log("Reset");
 }
+
+//function for calculating if given in textbox
+
+
+function formValidate(){
+    // var formTotal = document.forms["calculate"]["input"].value;
+
+    var formTotal = document.getElementById("input").value
+    try{
+        var formCalculatedTotal = eval(formTotal);
+    }catch(err){
+        alert("Give proper input.");
+        document.getElementById("input_message").innerHTML = "Please give proper input";
+    }
+    
+
+
+    console.log("form_input_recieved_is_"+formTotal);
+
+    if( formTotal !== ""){
+        document.getElementById("answer").innerHTML = formCalculatedTotal;
+        document.getElementById("history").innerHTML += "<br>" + formTotal + "=" + formCalculatedTotal;
+        document.getElementById("input_message").innerHTML = "Your answer is displayed bellow";
+        document.getElementById("input").value = formCalculatedTotal;
+        total=formCalculatedTotal;
+        return true;
+    }
+    else{
+        alert("Input is empty.");
+        document.getElementById("input_message").innerHMTL =  "Empty input recieved";
+        return false;
+    }
+
+
+}
