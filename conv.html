@@ -10,6 +10,8 @@
 
         <link rel="stylesheet" type="text/css" href="css/calc.css" />
 
+        <script src="JavaScript/conv.js"></script>
+
     </head>
 
     <body>
@@ -23,10 +25,24 @@
             
         </nav>
 
-        <div style="background-color: coral;height:500px;width: 1200px;text-align: center;display:table-cell;vertical-align: middle;">
-            PAGE UNDER CONSTRUCTION
-        </div>
+        <div style="background-color: coral;height:500px;width: 1185px;">
         
+        <b>Weights: </b><br><br>
+
+        Enter weight in kgs:
+        <input type="text" id="value_in_KG" value="0"><br>
+
+            <br>
+
+        Enter weight in lbs:
+        <input type="text" id="value_in_lbs" value="0"><br>
+        
+        <br>
+
+        <button onclick={convertWeight()}>Convert</button>
+
+        </div>
+
     </body>
 
 </html>
