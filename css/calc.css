@@ -1,0 +1,121 @@
+header {
+    background-color: #e60000;
+    text-align: center;
+    font-size: 40px;
+    color:blue;
+    height:80px;
+    /* margin: 10px; */
+    padding:25px 25px 25px 0;
+}
+
+nav{
+    background-color:#00ff00;
+    height:35px;
+    /* margin: 10px; */
+    padding: 10px 0 12px 0;
+    text-align: left;
+    display: flex;
+    align-content: flex-start;
+    border:1px solid black;
+}
+
+
+.nav_links{
+    padding:5px 10px 5px 10px;
+    color:white;
+    background-color: #3399ff;
+    margin:0 3px 0 3px;
+    text-align: center;
+    /* border:1px solid black;*/
+  }
+
+  .WholeBody{
+    background-color:#ccff99;
+    display:flex; 
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border:1px solid black;
+
+  }
+
+  .calcButtons{
+    background-color:blue;
+    /* margin: 10px ; */
+    width:40%;
+    display: flex; 
+    flex-wrap:wrap-reverse;
+    border:1px solid black;
+  }
+
+
+.cal-keys{
+    padding:20px;
+    text-align: center;
+    justify-content: center;
+    width:96px;
+    background-color: #ffa31a;
+    color:black;
+    margin: 10px;
+  }
+
+  .operations{
+    background-color:red;
+    /* margin: 10px; */
+    width:30%;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    border:1px solid black;
+  }
+
+  .cal-oper-keys{
+    padding:35px;
+    margin:10px;
+    background-color: #ffa31a;
+    color:black;
+    text-align: center;
+    justify-content: center;
+  
+  }
+
+  .display{
+      width:30%;
+      /* margin:10px;       */
+      flex-wrap: nowrap;
+      flex-direction: column;
+      background-color: aqua;
+      display: flex;
+
+  }
+
+  .history{
+    background-color: rgba(255, 190, 11, 0.055); 
+    /* margin: 10px; */
+    color: white;
+    flex-grow: 3;
+    text-align: right;
+    border:1px solid black;
+  }
+
+  .answer{
+      background-color: rgb(184, 77, 16);
+      color:white;
+      /* margin:10px; */
+      flex-grow:1;
+      text-align: right;
+      border:1px solid black;
+      align
+      
+
+  }
+
+
+  button{
+      background-color:#ffa31a;
+      padding:20px;
+      border:0px;
+  }
+
+
+
+
